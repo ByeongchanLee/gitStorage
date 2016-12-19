@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainControl">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.07561728395061729" focusTraversable="true" orientation="VERTICAL" prefHeight="650.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TextField fx:id="textSet" prefHeight="46.0" prefWidth="348.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <SplitPane dividerPositions="0.0707070707070707" focusTraversable="true" orientation="VERTICAL" prefHeight="587.0" prefWidth="348.0000999999975" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="1.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="289.9999084472656" prefWidth="346.0">
+                  <children>
+                    <Label fx:id="musicText" prefHeight="35.0" prefWidth="346.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <ListView fx:id="musicList" prefHeight="549.0" prefWidth="346.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <Button fx:id="nextButton" layoutX="145.0" layoutY="613.0" mnemonicParsing="false" text="next" />
+    <Button fx:id="playPauseButton" layoutX="14.0" layoutY="612.0" mnemonicParsing="false" text="pause" />
+  </children>
+</AnchorPane>
